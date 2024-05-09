@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Caveat";
+
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+
+    background-image: url("../img/tijana-drndarski-JWmNS05a_Hs-unsplash.jpg");
+    background-repeat: no-repeat;
+    color: rgb(6, 11, 16);
+    background-size: cover;
+  background-position: center center;
+    grid-area: banner;
+}
+
+h1 {
+    text-align: center;
+    padding: 200px  0 20px;
+    grid-area: h1;
+    ;
+}
+
+nav {
+    color: aliceblue;
+    display: flex; /* Modificado */
+    justify-content: space-around; /* Modificado */
+    align-items: center; /* Modificado */
+    background-color: rgb(215, 182, 110);
+    padding: 20px;
+}
+header {
+    grid-area: nav;
+    color: aliceblue;
+    display: inline-block;
+
+    background-color: rgb(215, 182, 110);
+    text-align: center;
+    padding: 20px;
+
+}
+
+body {
+    background-color: rgb(237, 238, 242);
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto auto; /* Dos filas, se ajustarán automáticamente al contenido */
+    gap: 20px; /* Espacio entre las celdas del grid */
+  
+    /* Definición de áreas */
+    grid-template-areas:
+      "banner"
+      "destacados";
+  }
+
+#destacados {
+    grid-area: destacados;
+    text-align: center;
+    color: rgb(6, 11, 16);
+    background-size: cover;
+}
