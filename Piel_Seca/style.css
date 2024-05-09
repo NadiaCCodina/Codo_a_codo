@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+nav a:hover {
+    transform: scale(1.2); /* Escalamos el elemento al 110% */
+}
+
+
+nav a {
+    background-color:white;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Usa flexbox para el diseño horizontal */
+    justify-content:center; /* Centra los elementos del menú a la derecha */
+    padding: 0;
+    background-color:white;
+}
+
+nav li {
+    margin: 0 10px; /* Espacio entre los elementos del menú */
+    font-family: trirong;
+    background-color:white;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px; /* Aumentar el relleno de los enlaces */
+    background-color:white; /* Color del fondo del menú */
+    color: #191C26; /* Color del texto del menú */
+    border-radius: 5px; /* Añadir bordes redondeados */
+}
+
+nav li a:hover {
+    background-color:#F3E6E0 /* Color de fondo al pasar el cursor */
+}

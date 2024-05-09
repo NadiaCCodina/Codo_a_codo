@@ -9,13 +9,6 @@
  }
 
 
- .contenedor {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-decoration: none;
-
-}
 
 body {
   background-color: rgb(237, 238, 242);
@@ -28,7 +21,7 @@ header {
   color: aliceblue;
   background-color: rgb(109, 85, 65);
   padding: 20px;
-  width: 100%;
+ 
   display: flex;
   flex-direction: row-reverse;
 }
@@ -157,8 +150,9 @@ h1 {
 
 .header-img {
     background-image: url(https://www.rommelag.com/hs-fs/hubfs/header-kosmetik.jpg?width=1920&height=650&name=header-kosmetik.jpg);
+    width: 100%;
     height: 280px;
-    background-size: cover;
+ 
     background-position: center;
     position: relative; /* Añadido */
 }
