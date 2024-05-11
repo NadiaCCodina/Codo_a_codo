@@ -636,3 +636,13 @@ margin-bottom: 20px;
   }*/
 
 
+  @media (max-width: 500px) {
+
+    .menu,
+    header {
+      flex-direction: column;
+  
+    }
+  
+  }
+  
