@@ -70,7 +70,7 @@ p {
 
 h2 {
   text-align: center;
-  }
+}
 
 #foto,
 #fotoDest {
@@ -136,13 +136,46 @@ h2 {
   padding: 30px;
   font-size: larger;
 }
+
 .sobreNosotros #SN {
   background-color: rgb(109, 85, 65);
   color: aliceblue;
   margin-bottom: 20px;
   padding: 30px;
   font-size: larger;
+
+  width: 100%;
+
 }
+
+.sobreNosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+#cuerpoSobreNosotros {
+  display: flex;
+
+}
+
+#textoSobreNosotros {
+  flex: 1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#fotosSobreNosotros {
+  flex: 1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
 #comprar {
   width: 100%;
   font-size: medium;
@@ -160,9 +193,11 @@ h2 {
 
 
 }
+
 .tarjeta:hover #comprar {
   opacity: 100%;
 }
+
 /*#comprar:hover {
   opacity: 100%;
 }*/
@@ -246,7 +281,7 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-   
+
 
   }
 
