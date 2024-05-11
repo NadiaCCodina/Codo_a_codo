@@ -128,7 +128,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background: white;
+  
   }
 
   .link-item{
@@ -473,18 +473,18 @@ margin-bottom: 20px;
         min-height: 100vh;
       }
       
-      .footer {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        flex-wrap: wrap;
-        padding: 30px 30px 20px 30px;
-        color: #2f2f2f;
-        background-color: #fff;
-        border-top: 1px solid #e5e5e5;
-        margin-top: auto;
-       
-      }
+      footer {
+  color: aliceblue;
+  background-color: rgb(109, 85, 65);
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 20 px;
+
+  font-size: 28.8px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
       
       .footer > * {
         flex:  1 100%;
