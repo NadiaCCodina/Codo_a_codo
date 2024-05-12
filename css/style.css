@@ -17,8 +17,8 @@ body {
 
 header {
   width: 100%;
-  color:#AC9D88;
-  background-color:rgb(221, 222, 217);
+  color: #AC9D88;
+  background-color: rgb(221, 222, 217);
   padding: 20px;
 
   display: flex;
@@ -34,11 +34,10 @@ header {
 }
 
 a {
-  color:#AC9D88;
+  color: #AC9D88;
   font-size: x-large;
   margin: 10px;
-
-
+  font-weight: 200;
 }
 
 
@@ -522,7 +521,7 @@ body {
 
 footer {
   color: #AC9D88;
-  background-color:rgb(221, 222, 217);
+  background-color: rgb(221, 222, 217);
   font-family: 'Montserrat';
   text-align: center;
   padding: 20 px;

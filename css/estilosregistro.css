@@ -27,6 +27,7 @@
     color: #AC9D88;
     font-size: x-large;
     margin: 10px;
+    font-weight: 200;
   }
   
   body {
@@ -120,4 +121,7 @@
 }
 a{
   text-decoration: none;
+}
+h4{
+  font-weight: 200;
 }
