@@ -157,25 +157,38 @@ h2 {
   display: flex;
 
 }
+#cuerpoSobreNosotros2{
+  display: flex;
 
+}
 #textoSobreNosotros {
   flex: 1;
   width: 100px;
   margin: 10px;
-  text-align: center;
+ 
   line-height: 75px;
   font-size: 30px;
 }
-
+#textoSobreNosotros2 {
+  flex: 1;
+  width: 100px;
+  margin: 10px;
+  text-align:left;
+  line-height: 75px;
+  font-size: 30px;
+}
 #fotosSobreNosotros {
   flex: 1;
   width: 100px;
   margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+ 
 }
-
+#fotosSobreNosotros2{
+  flex: 1;
+  width: 100px;
+margin: 10px;
+ 
+}
 #comprar {
   width: 100%;
   font-size: medium;
