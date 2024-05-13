@@ -143,8 +143,8 @@ h2 {
   color: aliceblue;
   margin-bottom: 20px;
   padding: 30px;
-  font-size: 28.8px;
-  font-weight: 400;
+  font-size: larger;
+
   width: 100%;
 
 }
@@ -229,7 +229,7 @@ h2 {
   position: sticky;
   bottom: 10px;
   padding: 10px 80px;
-  background-color:  #AC9D88;
+  background-color: #d2c1aa;
   opacity: 0%;
   color: rgb(255, 255, 255);
   text-decoration: none;
