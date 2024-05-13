@@ -159,7 +159,7 @@ h2 {
   flex-direction: column;
 }
 
-#cuerpoSobreNosotros, #cuerpoSobreNosotros2, {
+#cuerpoSobreNosotros, #cuerpoSobreNosotros2 {
    
   display: flex;
   align-items: center;
@@ -410,4 +410,9 @@ a {
   padding: 25px;
   display: block;
 }
+}
+@media(max-width:500px){
+  #fotosSobreNosotros img{
+    content: url("../img/fotoMediaQuerySN2.png");
+  }
 }
