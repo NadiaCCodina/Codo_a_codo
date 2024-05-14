@@ -43,8 +43,8 @@ let dataSeccionProd = [
     },
     {
         id: 2,
-        nombre: "Crema",
-        descripcion: "Crema hidratante",
+        nombre: "Crema Facial",
+        descripcion: "Crema hidratante con Acido Hialuronico",
         imagen: "img/crema.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/crema-facial-pieles-secas-o-maduras-con-acido-hialuronico"
     },
@@ -112,7 +112,7 @@ for (let producto of dataSeccionProd) {
        
       <div class="cuerpo">
         <h2> ${producto.nombre}</h2>
-        <h3>${producto.descripcion}</h3>  
+        <h3> ${producto.descripcion}</h3>  
         
       </div>  
       <a id ="comprar" href=${producto.enlase}>Comprar</a>
@@ -135,8 +135,8 @@ let dataSeccionDest = [
     },
     {
         id: 2,
-        nombre: "Crema",
-        descripcion: "Crema hidratante",
+        nombre: "Crema facial",
+        descripcion: "Crema hidratante de Acido Hialuronico",
         imagen: "img/crema.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/crema-facial-pieles-secas-o-maduras-con-acido-hialuronico"
     },
