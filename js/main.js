@@ -204,20 +204,21 @@ function navigate(direction) {
 }
     }
 
-    const toggleButton = document.getElementById('button-menu')
-const navWrapper = document.getElementById('nav')
+//tipos de pieles
+//const toggleButton = document.getElementById('button-menu')
+//const navWrapper = document.getElementById('nav')
 
-toggleButton.addEventListener('click',() => {
-  toggleButton.classList.toggle('close')
-  navWrapper.classList.toggle('show')
-})
+//toggleButton.addEventListener('click',() => {
+ // toggleButton.classList.toggle('close')
+ // navWrapper.classList.toggle('show')
+//})
 
-navWrapper.addEventListener('click',e => {
-  if(e.target.id === 'nav'){
-    navWrapper.classList.remove('show')
-    toggleButton.classList.remove('close')
-  }
-})
+//navWrapper.addEventListener('click',e => {
+ //if(e.target.id === 'nav'){
+   // navWrapper.classList.remove('show')
+   // toggleButton.classList.remove('close')
+ // }
+//})//
 
 
 function getResult() {
@@ -278,4 +279,58 @@ function getResult() {
       // En caso de un resultado desconocido, redirigir a una página de error
       window.location.href = 'error.html';
 }
+}
+
+//registro
+function validar(){
+    let nombre = document.getElementById("nombres");
+    let apellido = document.getElementById("apellidos");
+    let mail = document.getElementById("correo");
+    let clave = document.getElementById("clave");
+    error = false;
+
+    document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
+    document.getElementById("validar_apellidos").innerHTML = "&nbsp; ";
+    document.getElementById("validar_correo").innerHTML = "&nbsp; ";
+    document.getElementById("validar_clave").innerHTML = "&nbsp; ";
+
+    if (nombre.value == ""){
+        document.getElementById("validar_nombres").innerHTML = "Nombre Incompleto";
+        error = true;
+        nombre.focus();
+        
+    }
+
+    if (apellido.value == ""){
+        document.getElementById("validar_apellidos").innerHTML = "Apellido Incompleto";
+        error = true;
+        apellido.focus();
+    }
+
+    if (mail.value == ""){
+        document.getElementById("validar_correo").innerHTML = "Mail Incompleto";
+        error = true;
+        mail.focus();
+    }
+
+    if (clave.value.length < 10){
+        document.getElementById("validar_clave").innerHTML = "Debe tener como minimo 10 caracteres";
+        error = true;
+        clave.focus();
+    }
+    if (error == false){
+        document.getElementById("nombres").value = "";
+        document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
+        document.getElementById("apellidos").value = "";
+        document.getElementById("validar_apellidos").innerHTML = "&nbsp; ";
+        document.getElementById("correo").value = "";
+        document.getElementById("validar_correo").innerHTML = "&nbsp; ";
+        document.getElementById("clave").value = "";
+        document.getElementById("validar_clave").innerHTML = "&nbsp; ";
+        alert("Dato enviado");
+    }
+    return !error
+
+
+
 }

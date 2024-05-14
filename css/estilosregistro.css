@@ -22,16 +22,16 @@
     font-size: large;
   
   }
-  
   a {
-    color: #AC9D88;
+    color: aliceblue;
     font-size: x-large;
     margin: 10px;
     font-weight: 200;
+    color: #AC9D88;
   }
   
   body {
-    background-image: url('../img/registro/fondo_7.jpg');
+    background-image: url('../img/registro/fondo_13.jpg');
     background-size:cover ;
   }
   
@@ -42,8 +42,8 @@
     margin: auto;
     margin-top: 100px;
     border-radius: 20px;
-    font-family: 'calibr';
-    color: #AC9D88;
+    font-family: 'calibri';
+    color: grey;
     box-shadow: 7px 13px 37px #000;
   }
   
@@ -54,28 +54,26 @@
   
   .controls {
     width: 100%;
-    background:  rgb(221, 222, 217);
+    background: rgb(221, 222, 217);
     padding: 10px;
     border-radius: 4px;
-    margin-bottom: 16px;
-    border: 3px solid  #AC9D88;
-    font-family: 'Montserrat';
+  
+    border: 3px solid gray;
+    font-family: 'calibri';
     font-size: 18px;
-    color: #AC9D88;
+    color: white;
   }
   
   .form-register p {
     height: 40px;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 40px;
   }
   
   .form-register a {
-    color: white;
+    color: rgb(74, 74, 238);
     text-decoration: none;
-    font-size: 10px;
-  
   }
   
   .form-register a:hover {
@@ -84,9 +82,8 @@
   }
   
   .form-register .botons {
-    margin: 20px;
     width: 100%;
-    background: #AC9D88;
+    background: #747475;
     border: none;
     padding: 12px;
     color: white;
@@ -94,34 +91,37 @@
     font-size: 16px;
   }
 
-  @media(max-width: 500px) {
-    .form-register{
-      width: 75%;
-    }
+  .form-register  {
+   text-align: start;
   }
 
-  @media (max-width: 500px) {
-    .menu, header{
-      flex-direction: column; 
-     
-    }
-  }    
+  #validar_nombres, #validar_apellidos, #validar_correo {
+padding-bottom: 10px;
+margin-bottom: 10px;
+margin-top: 0;
+  }
+#terminos{
+  font-size: 18px;
+ 
+  line-height:1px;
+}
 
-  
   footer {
     color: aliceblue;
-    background-color:  rgb(221, 222, 217);
+    background-color:  #AC9D88;
     font-family: 'Montserrat';
     text-align: center;
-    padding:20 px;
-    
+    padding: 20 px;
+  
     font-size: 28.8px;
     font-weight: 100;
-    margin-top:20px;
-}
-a{
-  text-decoration: none;
-}
-h4{
-  font-weight: 200;
-}
+    margin-top: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  p{
+    margin-bottom: 25px;
+    line-height:1px;
+  }
