@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector("footer").innerHTML= `
 
-    <p>Nuestras redes sociales</p>
+    <p id="pFooter">Nuestras redes sociales</p>
  <nav>
     <a href="https://inquiet.empretienda.com.ar/">
         <img width="36" src="img/instagram.png" alt="">

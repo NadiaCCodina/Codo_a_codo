@@ -10,7 +10,7 @@
     width: 100%;
     color: aliceblue;
     background-color:  rgb(221, 222, 217);
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -26,8 +26,8 @@
     color: aliceblue;
     font-size: x-large;
     margin: 10px;
-    font-weight: 200;
-    color: #AC9D88;
+    font-weight: 400;
+    color: #8C6249
   }
   
   body {
@@ -50,6 +50,7 @@
   .form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
+    font-weight: 400;
   }
   
   .controls {
@@ -69,6 +70,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 40px;
+    font-weight: 300;
   }
   
   .form-register a {
@@ -87,8 +89,9 @@
     border: none;
     padding: 12px;
     color: white;
-    margin: 16px 0;
+    margin: 30px 0;
     font-size: 16px;
+    font-weight: 300;
   }
 
   .form-register  {
@@ -111,7 +114,7 @@ margin-top: 0;
     background-color:  #AC9D88;
     font-family: 'Montserrat';
     text-align: center;
-    padding: 20 px;
+    padding: 30 px;
   
     font-size: 28.8px;
     font-weight: 100;
@@ -121,7 +124,8 @@ margin-top: 0;
   a {
     text-decoration: none;
   }
-  p{
+  #pFooter{
     margin-bottom: 25px;
     line-height:1px;
+    padding-top: 30px;
   }

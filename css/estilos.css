@@ -23,7 +23,7 @@ header {
   width: 100%;
   color: aliceblue;
   background-color: rgb(221, 222, 217);
-  padding: 20px;
+  padding: 30px;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -34,15 +34,15 @@ header {
   padding: px;
   font-size: large;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 a {
   color: aliceblue;
   font-size: x-large;
   margin: 10px;
-  font-weight: 200;
-  color: #AC9D88;
+  font-weight: 400;
+  color: #8C6249
 }
 
 h1 {
@@ -98,7 +98,7 @@ h2 {
   height: 100%;
   background-color: rgb(221, 222, 217);
   box-sizing: border-box;
-  color:  #AC9D88;
+  color:  #8C6249;
   opacity: 20;
   transition: opacity 0.3s ease;
   text-align: center;
@@ -107,13 +107,14 @@ h2 {
 }
 .tarjeta .cuerpo h2{
   padding: 10px;
-  
+  font-weight: 400;
 }
 
 .tarjeta .cuerpo h3{
 padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
+  font-weight: 400;
 }
 
 #dest {
@@ -126,8 +127,8 @@ padding-bottom: 10px;
 
 #destaca {
   background-color: rgb(221, 222, 217);
-  color: #AC9D88;
-  margin-bottom: 20px;
+  color: #8C6249;
+  margin-bottom: 30px;
   padding: 30px;
   font-size: 50px;
   font-weight: 400;
@@ -137,7 +138,7 @@ padding-bottom: 10px;
 .sobreNosotros #SN {
   background-color: #AC9D88;
   color: aliceblue;
-
+margin-top: 30px;
   padding: 30px;
   font-size: 50px;
 
@@ -156,7 +157,7 @@ padding-bottom: 10px;
 }
 
 #cuerpoSobreNosotros, #cuerpoSobreNosotros2 {
-   
+  font-weight: 400;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -176,16 +177,20 @@ padding-bottom: 10px;
 }
 
 #textoSobreNosotros {
-  
+  font-weight: 400;
   width: 100%;
   margin: 10px;
-  line-height: 75px;
-  font-size: 22px;
+  line-height: 55px;
+  font-size: 25px;
   padding: 25px;
   display: block;
+  text-indent: 30px;
 }
 
-
+#textoSobreNosotros h3{
+  font-weight: 400;
+  color: #8C6249;
+}
 
 #comprar {
   width: 100%;
@@ -268,7 +273,6 @@ footer {
   font-family: 'Montserrat';
   text-align: center;
   padding: 20 px;
-
   font-size: 28.8px;
   font-weight: 100;
   margin-top: 20px;
@@ -324,20 +328,38 @@ a {
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .tarjeta {
     height: 300px;
     width: 150px;
     font-size: x-small;
-    margin-left: 0;
+    margin:10px;
     margin-bottom: 10px;
   }
 
 }
 
+@media (max-width: 480px) {
+  .tarjeta {
+    height: 300px;
+    width: 150px;
+    font-size: x-small;
+    margin:10px;
+    margin-bottom: 10px;
+  }
+
+}
+@media (min-width: 480px) and (max-width: 800px){
+  .tarjeta {
+margin: 20px;
+  }
+
+}
+
+
 @media (max-width: 500px) {
   .cuerpo {
-    font-size: small;
+    font-size: 16px;
   }
 }
 
@@ -395,7 +417,7 @@ a {
     content: url("../img/fotoMediaQuerySN2.png");
   }
 }
-@media(max-width:500px){
+@media(max-width:480px){
  #cuerpoSobreNosotros , #cuerpoSobreNosotros2 {
   padding: 0;
   

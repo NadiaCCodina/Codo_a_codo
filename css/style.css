@@ -19,7 +19,7 @@ header {
   width: 100%;
   color: #AC9D88;
   background-color: rgb(221, 222, 217);
-  padding: 20px;
+  padding: 30px;
 
   display: flex;
   flex-direction: row-reverse;
@@ -34,12 +34,12 @@ header {
 }
 
 a {
-  color: #AC9D88;
+  color: aliceblue;
   font-size: x-large;
   margin: 10px;
-  font-weight: 200;
+  font-weight: 400;
+  color: #8C6249
 }
-
 
 
 .link-item {
