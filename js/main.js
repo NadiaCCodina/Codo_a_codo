@@ -334,3 +334,24 @@ function validar(){
 
 
 }
+
+//carrusel automatico comentarios
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let dots = document.getElementsByClassName("dot");
+    let comentarios = document.getElementsByClassName("gallery-item-c");
+    let i;
+    for (i = 0; i < comentarios.length; i++) {
+        comentarios[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > comentarios.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    comentarios[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
