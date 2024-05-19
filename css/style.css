@@ -691,3 +691,82 @@ footer {
   }
 
 }
+
+/*footer*/
+footer {
+  color: aliceblue;
+  background-color: rgb(109, 85, 65);
+  font-family: 'Montserrat';
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: 28.8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.medio {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#aFooter {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: large;
+
+}
+
+.izquierda {
+  text-align: left;
+
+}
+.margen{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.margen1{
+margin-top: 15px;
+}
+
+.derecha {
+  text-align: left;
+}
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0%;
+  padding: 0%;
+  margin-top: 0px;
+}
+
+.mail::before {
+  content: url(../img/email.png);
+  margin-right: 5px;
+}
+
+.boton::before {
+  content: url(../img/right-arrow.png);
+  margin-right: 5px;
+}
+h6{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.img{
+  display: flex;
+  justify-content: space-between;
+}
+.img2{
+  display: flex;
+  justify-content: space-between;
+}

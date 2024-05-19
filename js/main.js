@@ -17,18 +17,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector("footer").innerHTML= `
 
-    <p id="pFooter">Nuestras redes sociales</p>
- <nav>
-    <a href="https://inquiet.empretienda.com.ar/">
-        <img width="36" src="img/instagram.png" alt="">
-    </a>
-    <a href="https://www.whatsapp.com">
-        <img width="36" src="img/whatsapp.png" alt="">
-    </a>
-    <a href="https://www.facebook.com">
-        <img width="36" src="img/facebook.png" alt="">
-    </a>  
-</nav>
+    <div class="izquierda">
+            <div class="margen">
+                <h6>Medios de pago</h6>
+                <div class="imgFooter">
+                    <img width="50" src="./img/deposito.png" alt="">
+                    <img width="50" src="./img/efectivo.png" alt="">
+                    <img width="50" src="./img/acordar.png" alt="">
+                </div>
+            </div>
+            <div class="margen1">
+                <h6>Medios de envío</h6>
+                <div class="img2Footer">
+                    <img width="50" src="./img/correo-argentino.png" alt="">
+                    <img width="50" src="./img/personalizado.png" alt="">
+                    <img width="50" src="./img/acordar.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="medio">
+            <h6>Nuestras redes sociales</h6>
+            <div class="logos">
+                <a id="aFooter" href="https://www.instagram.com">
+                    <img width="30" src="img/instagram.png" alt="">
+                </a>
+                <a id="aFooter" href="https://www.whatsapp.com">
+                    <img width="30" src="img/whatsapp.png" alt="">
+                </a>
+                <a id="aFooter" href="https://www.facebook.com">
+                    <img width="30" src="img/facebook.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="derecha">
+            <h6>Contacto</h6>
+            <ul class="tabla">
+                <li>
+                    <a class="mail" href="https://mailto:nadiaccod@gmail.com">nadiaccod@gmail.com</a>
+                </li>
+                <li>
+                    <a class="boton" href="https://inquiet.empretienda.com.ar/#regret-modal">Botón de
+                        arrepentimiento</a>
+                </li>
+            </ul>
+
+        </div>
 `;
 
 });
