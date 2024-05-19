@@ -24,17 +24,16 @@ header {
   color: aliceblue;
   background-color: rgb(221, 222, 217);
   padding: 30px;
-  width: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
 
 .menu {
   display: flex;
-  padding: px;
   font-size: large;
   text-decoration: none;
   font-weight: 300;
+  
 }
 
 a {
@@ -51,10 +50,7 @@ h1 {
   padding: 150px 200px 20px 200px;
 }
 
-p {
-  text-align: center;
-  padding: 20px;
-}
+
 
 h2 {
   text-align: center;
@@ -68,7 +64,7 @@ h2 {
   justify-content: space-around
 }
 
-
+/*tarjeta producto*/
 
 .tarjeta {
   position: relative;
@@ -169,7 +165,7 @@ h2 {
 
 
 #fotosSobreNosotros,
-#otosSobreNosotros2 {
+#fotosSobreNosotros2 {
   width: 100%;
   height: auto;
 }
@@ -224,7 +220,7 @@ h2 {
 }*/
 
 #gallery {
-  width: 90%;
+  width: 80%;
   padding-top: 40px;
   margin: auto;
   overflow: hidden;
@@ -310,102 +306,142 @@ h2 {
 
   height: auto;
 }
-
 /*footer*/
 footer {
-    color: aliceblue;
-    background-color: rgb(109, 85, 65);
-    font-family: 'Montserrat';
-    padding-top: 10px;
-    padding-bottom: 25px;
-    font-size: 28.8px;
-    display: flex;
-    justify-content: space-around;
+  color: aliceblue;
+  background-color: rgb(109, 85, 65);
+  font-family: 'Montserrat';
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: 28.8px;
+  display: flex;
+  justify-content: space-around;
 }
 
 
 .medio {
-    text-align: center;
+  text-align: center;
 }
 
 .logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #aFooter {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: large;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: large;
 
 }
 
 .izquierda {
-    text-align: left;
+  text-align: left;
 
 }
 .margen{
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .margen1{
- margin-top: 15px;
+margin-top: 15px;
 }
 
 .derecha {
-    text-align: left;
+  text-align: left;
 }
 
 .tabla {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0%;
-    padding: 0%;
-    margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0%;
+  padding: 0%;
+  margin-top: 0px;
 }
 
 .mail::before {
-    content: url(../img/email.png);
-    margin-right: 5px;
+  content: url(../img/email.png);
+  margin-right: 5px;
 }
 
 .boton::before {
-    content: url(../img/right-arrow.png);
-    margin-right: 5px;
+  content: url(../img/right-arrow.png);
+  margin-right: 5px;
 }
 h6{
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-.img{
-    display: flex;
-    justify-content: space-between;
+.imgFooter{
+  display: flex;
+  justify-content: space-between;
 }
-.img2{
-    display: flex;
-    justify-content: space-between;
+.img2Footer{
+  display: flex;
+  justify-content: space-between;
 }
 
 
 a {
-  text-decoration: none;
+text-decoration: none;
+}
+/*footer*/
+@media (max-width: 600px) {
+footer {
+
+
+  color: aliceblue;
+  background-color: rgb(109, 85, 65);
+  font-family: 'Montserrat';
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-size: px;
+ display:block;
+
+ 
 }
 
-@media (max-width: 500px) {
+h6{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+.imgFooter{
+  display: flex;
+  justify-content:center;
+}
+.img2Footer{
+  display: flex;
+  justify-content: center;
+}
+.mail{
+  text-align: center;
+}
+}
 
-  .menu,
+@media (max-width: 480px) {
   header {
     flex-direction: column;
-
+    background-color: rgb(221, 222, 217); /* Asegurar el color de fondo */
+    padding: 6px;
+    width: 100%;
+    position: static;
   }
+  
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   #gallery {
     width: 100%;
     margin-bottom: 0;
@@ -413,7 +449,7 @@ a {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #comprar {
     width: 100%;
     font-size: medium;
@@ -463,7 +499,7 @@ a {
 
 }
 
-@media (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .tarjeta {
     margin: 20px;
   }
@@ -471,13 +507,13 @@ a {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .cuerpo {
     font-size: 16px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .SNConteiner {
     flex-direction: column-reverse;
     font-family: Montserrat;
@@ -487,7 +523,7 @@ a {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #cuerpoSobreNosotros {
     display: flex;
     flex-direction: column;
@@ -498,7 +534,7 @@ a {
 
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #cuerpoSobreNosotros2 {
     display: flex;
     flex-direction: column-reverse;
@@ -508,7 +544,7 @@ a {
 
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #textoSobreNosotros {
 
     width: 100%;
@@ -522,13 +558,13 @@ a {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #fotosSobreNosotros img {
     content: url("../img/fotoMediaQuerySN.png");
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   #fotosSobreNosotros2 img {
     content: url("../img/fotoMediaQuerySN2.png");
   }
@@ -543,7 +579,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 481px) and (max-width: 800px) {
   #cuerpoSobreNosotros2 {
     display: flex;
     flex-direction: column-reverse;
@@ -554,7 +590,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 481px) and (max-width: 800px) {
   #cuerpoSobreNosotros {
     display: flex;
     flex-direction: column;
@@ -563,19 +599,19 @@ a {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   .tarjeta .cuerpo h2 {
     padding: 0;
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   .tarjeta .cuerpo h3 {
     font-size: small;
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   .gallery-item-c {
     margin: 0;
     display: none;
@@ -587,7 +623,7 @@ a {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:480px) {
   .gallery-item-c img {
     border-radius: 20px;
     width: 100%;
@@ -680,24 +716,8 @@ a {
   line-height: 1px;
 }
 
-footer {
-  color: aliceblue;
-  background-color: #AC9D88;
-  font-family: 'Montserrat';
-  text-align: center;
-  padding: 30 px;
-
-  font-size: 28.8px;
-  font-weight: 100;
-  margin-top: 20px;
-}
 
 a {
   text-decoration: none;
 }
 
-#pFooter {
-  margin-bottom: 25px;
-  line-height: 1px;
-  padding-top: 30px;
-}
