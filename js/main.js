@@ -294,25 +294,25 @@ function getResult() {
     const resultDiv = document.getElementById('result');
    
     
-    // Redirigir a la página correspondiente según el tipo de piel
-    switch (skinType) {
-  case "Piel seca":
-      window.location.href = './Piel_Seca/index.html';
-      break;
-  case "Piel normal":
-      window.location.href = './Piel_Normal/index.html';
-      break;
-  case "Piel grasa":
-      window.location.href = './Piel_Grasa/index.html';
-      break;
- case "Piel mixta":
-        window.location.href = './Piel_Mixta/index.html';
+   // Redirigir a la página correspondiente según el tipo de piel
+   switch (skinType) {
+    case "Piel seca":
+        window.location.href = './Piel_Seca.html';
         break;
-  default:
-      // En caso de un resultado desconocido, redirigir a una página de error
-      window.location.href = 'error.html';
-}
-}
+    case "Piel normal":
+        window.location.href = './Piel_Normal.html';
+        break;
+    case "Piel grasa":
+        window.location.href = './Piel_Grasa.html';
+        break;
+   case "Piel mixta":
+          window.location.href = './Piel_Mixta.html';
+          break;
+    default:
+        // En caso de un resultado desconocido, redirigir a una página de error
+        window.location.href = 'error.html';
+  }
+  }
 
 //registro
 function validar(){
