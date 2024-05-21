@@ -212,8 +212,6 @@ if (elemento) {
     }
 
     document.querySelector("#fotoDest").innerHTML = cad2
-
-
 }
 
 var elemento = document.getElementById('gallery');
@@ -227,33 +225,22 @@ if (elemento) {
         navigate(1);
     });
 
-    function navigate(direction) {
-        const galleryContainer = document.querySelector('.gallery-container');
-        const totalImages = document.querySelectorAll('.gallery-item').length;
+    function navigate(direccion) {
+        currentIndex = currentIndex + direccion;
 
-        currentIndex = (currentIndex + direction + totalImages) % totalImages;
-        const offset = -currentIndex * 100;
+        let galleryItems = document.getElementsByClassName("gallery-item");
 
-        galleryContainer.style.transform = `translateX(${offset}%)`;
+        for (let galleryItem of galleryItems) {
+            galleryItem.style.display = "none";
+        }
+
+        if (currentIndex < 0) { currentIndex = galleryItems.length - 1 }
+        if (currentIndex > galleryItems.length - 1) { currentIndex = 0 }
+
+        galleryItems[currentIndex].style.display = "block";
+
     }
 }
-
-//tipos de pieles
-//const toggleButton = document.getElementById('button-menu')
-//const navWrapper = document.getElementById('nav')
-
-//toggleButton.addEventListener('click',() => {
-// toggleButton.classList.toggle('close')
-// navWrapper.classList.toggle('show')
-//})
-
-//navWrapper.addEventListener('click',e => {
-//if(e.target.id === 'nav'){
-// navWrapper.classList.remove('show')
-// toggleButton.classList.remove('close')
-// }
-//})//
-
 
 function getResult() {
     // Obtener las respuestas seleccionadas
@@ -294,7 +281,6 @@ function getResult() {
     // Mostrar resultado
     const resultDiv = document.getElementById('result');
 
-
     // Redirigir a la página correspondiente según el tipo de piel
     switch (skinType) {
         case "Piel seca":
@@ -332,7 +318,6 @@ function validar() {
         document.getElementById("validar_nombres").innerHTML = "Nombre Incompleto";
         error = true;
         nombre.focus();
-
     }
 
     if (apellido.value == "") {
@@ -352,6 +337,7 @@ function validar() {
         error = true;
         clave.focus();
     }
+
     if (error == false) {
         document.getElementById("nombres").value = "";
         document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
@@ -364,9 +350,6 @@ function validar() {
         alert("Dato enviado");
     }
     return !error
-
-
-
 }
 
 //carrusel automatico comentarios
@@ -374,18 +357,17 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    let dots = document.getElementsByClassName("dot");
+    
     let comentarios = document.getElementsByClassName("gallery-item-c");
-    let i;
-    for (i = 0; i < comentarios.length; i++) {
-        comentarios[i].style.display = "none";
+   
+    for (let coment of comentarios) {
+     coment.style.display = "none";
     }
+   
+    comentarios[slideIndex].style.display = "block";
+
     slideIndex++;
-    if (slideIndex > comentarios.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    comentarios[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    if (slideIndex > comentarios.length -1) { slideIndex = 0 }
+
     setTimeout(showSlides, 5000);
 }

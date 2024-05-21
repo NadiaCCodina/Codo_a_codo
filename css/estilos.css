@@ -15,8 +15,6 @@
 
 body {
   background-color: rgb(237, 238, 242);
-
-
 }
 
 header {
@@ -47,7 +45,6 @@ a {
 
 
 h1 {
-
   text-align: center;
   padding: 150px 200px 20px 200px;
 }
@@ -246,6 +243,9 @@ h2 {
   height: ;
   display: block;
 }
+.gallery-item-c{
+  display: none;
+}
 
 /* Navegación del Slider */
 .gallery-navigation {
@@ -421,8 +421,14 @@ h6{
   justify-content: center;
 }
 .mail{
-  text-align: center;
+  text-align: right;
+  color: rgb(221, 222, 217); 
+  margin-left: 50px;
 }
+}
+.boton{
+  text-align: center;
+  color: rgb(221, 222, 217);  
 }
 
 @media (max-width: 480px) {
