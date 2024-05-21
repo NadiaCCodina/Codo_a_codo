@@ -179,16 +179,16 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
-  /* Color del texto */
+
   font-size: 24px;
-  /* Tamaño del texto */
+
   text-align: center;
-  /* Alineación del texto */
+
 }
 
 nav a:hover {
   transform: scale(1.2);
-  /* Escalamos el elemento al 110% */
+
 }
 
 
@@ -196,16 +196,13 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: flex;
-  /* Usa flexbox para el diseño horizontal */
   justify-content: center;
-  /* Centra los elementos del menú a la derecha */
   padding: 0;
   background-color: white;
 }
 
 nav li {
   margin: 0 10px;
-  /* Espacio entre los elementos del menú */
   font-family: trirong;
   background-color: white;
 }
@@ -213,13 +210,9 @@ nav li {
 nav li a {
   display: block;
   padding: 10px 20px;
-  /* Aumentar el relleno de los enlaces */
   background-color: white;
-  /* Color del fondo del menú */
   color: #191C26;
-  /* Color del texto del menú */
   border-radius: 5px;
-  /* Añadir bordes redondeados */
 }
 
 nav li a:hover {
@@ -295,15 +288,11 @@ nav li a:hover {
 
 .form-container {
   width: calc(100% - 20px);
-  /* Ancho igual al de las tarjetas */
-  margin-top: 40px;
-  /* Espacio arriba del formulario */
+   margin-top: 40px; 
   margin-bottom: 40px;
-  /* Espacio abajo del formulario */
   background-color: #f2f2f2;
-  /* Color de fondo del contenedor */
   padding: 20px;
-  /* Espaciado interno del contenedor */
+
 }
 
 

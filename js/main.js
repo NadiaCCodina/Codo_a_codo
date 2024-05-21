@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
- 
 
-    document.querySelector("footer").innerHTML= `
+
+    document.querySelector("footer").innerHTML = `
 
     <div class="izquierda">
             <div class="margen">
@@ -118,26 +118,27 @@ let dataSeccionProd = [
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/shampoo-solido-de-romero"
     },
     {
-    id: 8,
+        id: 8,
         nombre: "Kit Serum y Crema Facial",
         descripcion: "Serum y crema con Acido Hialuronico",
         imagen: "img/kitSerumCrema.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
-},
+    },
 
-{
-    id: 9,
+    {
+        id: 9,
         nombre: "Kit Serum, Crema Facial y Limpiador",
         descripcion: "Serum y crema con Acido Hialuronico y limpiador facial",
         imagen: "img/kitCompleto.jpeg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
-},
+    },
 ]
-var elemento = document.getElementById('foto');
-    if (elemento) {
-cad = ``
-for (let producto of dataSeccionProd) {
-    cad = cad + `
+
+var elemento = document.getElementById('fotoProd');
+if (elemento) {
+    cad = ``
+    for (let producto of dataSeccionProd) {
+        cad = cad + `
     <div class="tarjeta">
         
        <img class= "imgb"
@@ -152,11 +153,11 @@ for (let producto of dataSeccionProd) {
       </div>
     `
 
-}
-document.querySelector("#foto").innerHTML = cad
-let currentIndex = 0;
-
     }
+    document.querySelector("#fotoProd").innerHTML = cad
+    let currentIndex = 0;
+
+}
 
 let dataSeccionDest = [
     {
@@ -191,9 +192,9 @@ let dataSeccionDest = [
 var elemento = document.getElementById('fotoDest');
 if (elemento) {
 
-cad2 = ``
-for (let producto of dataSeccionDest) {
-    cad2 = cad2 + `
+    cad2 = ``
+    for (let producto of dataSeccionDest) {
+        cad2 = cad2 + `
     <div class="tarjeta">
         
        <img class= "imgb"
@@ -208,49 +209,49 @@ for (let producto of dataSeccionDest) {
       </div>
     `
 
-}
-
-document.querySelector("#fotoDest").innerHTML = cad2
-
-
     }
 
-    var elemento = document.getElementById('gallery');
-    if (elemento) {
-        let currentIndex = 0;
-        document.querySelector('.prev-button').addEventListener('click', () => {
-    navigate(-1);
-});
+    document.querySelector("#fotoDest").innerHTML = cad2
 
-document.querySelector('.next-button').addEventListener('click', () => {
-    navigate(1);
-});
 
-function navigate(direction) {
-    const galleryContainer = document.querySelector('.gallery-container');
-    const totalImages = document.querySelectorAll('.gallery-item').length;
-
-    currentIndex = (currentIndex + direction + totalImages) % totalImages;
-    const offset = -currentIndex * 100;
-
-    galleryContainer.style.transform = `translateX(${offset}%)`;
 }
+
+var elemento = document.getElementById('gallery');
+if (elemento) {
+    let currentIndex = 0;
+    document.querySelector('.prev-button').addEventListener('click', () => {
+        navigate(-1);
+    });
+
+    document.querySelector('.next-button').addEventListener('click', () => {
+        navigate(1);
+    });
+
+    function navigate(direction) {
+        const galleryContainer = document.querySelector('.gallery-container');
+        const totalImages = document.querySelectorAll('.gallery-item').length;
+
+        currentIndex = (currentIndex + direction + totalImages) % totalImages;
+        const offset = -currentIndex * 100;
+
+        galleryContainer.style.transform = `translateX(${offset}%)`;
     }
+}
 
 //tipos de pieles
 //const toggleButton = document.getElementById('button-menu')
 //const navWrapper = document.getElementById('nav')
 
 //toggleButton.addEventListener('click',() => {
- // toggleButton.classList.toggle('close')
- // navWrapper.classList.toggle('show')
+// toggleButton.classList.toggle('close')
+// navWrapper.classList.toggle('show')
 //})
 
 //navWrapper.addEventListener('click',e => {
- //if(e.target.id === 'nav'){
-   // navWrapper.classList.remove('show')
-   // toggleButton.classList.remove('close')
- // }
+//if(e.target.id === 'nav'){
+// navWrapper.classList.remove('show')
+// toggleButton.classList.remove('close')
+// }
 //})//
 
 
@@ -262,7 +263,7 @@ function getResult() {
 
     // Contar respuestas
     answers.forEach(answer => {
-        switch(answer.value) {
+        switch (answer.value) {
             case 'A':
                 countA++;
                 break;
@@ -292,30 +293,30 @@ function getResult() {
 
     // Mostrar resultado
     const resultDiv = document.getElementById('result');
-   
-    
-   // Redirigir a la página correspondiente según el tipo de piel
-   switch (skinType) {
-    case "Piel seca":
-        window.location.href = './Piel_Seca.html';
-        break;
-    case "Piel normal":
-        window.location.href = './Piel_Normal.html';
-        break;
-    case "Piel grasa":
-        window.location.href = './Piel_Grasa.html';
-        break;
-   case "Piel mixta":
-          window.location.href = './Piel_Mixta.html';
-          break;
-    default:
-        // En caso de un resultado desconocido, redirigir a una página de error
-        window.location.href = 'error.html';
-  }
-  }
 
-//registro
-function validar(){
+
+    // Redirigir a la página correspondiente según el tipo de piel
+    switch (skinType) {
+        case "Piel seca":
+            window.location.href = './Piel_Seca.html';
+            break;
+        case "Piel normal":
+            window.location.href = './Piel_Normal.html';
+            break;
+        case "Piel grasa":
+            window.location.href = './Piel_Grasa.html';
+            break;
+        case "Piel mixta":
+            window.location.href = './Piel_Mixta.html';
+            break;
+        default:
+            // En caso de un resultado desconocido, redirigir a una página de error
+            window.location.href = 'error.html';
+    }
+}
+
+//registro validacion
+function validar() {
     let nombre = document.getElementById("nombres");
     let apellido = document.getElementById("apellidos");
     let mail = document.getElementById("correo");
@@ -327,31 +328,31 @@ function validar(){
     document.getElementById("validar_correo").innerHTML = "&nbsp; ";
     document.getElementById("validar_clave").innerHTML = "&nbsp; ";
 
-    if (nombre.value == ""){
+    if (nombre.value == "") {
         document.getElementById("validar_nombres").innerHTML = "Nombre Incompleto";
         error = true;
         nombre.focus();
-        
+
     }
 
-    if (apellido.value == ""){
+    if (apellido.value == "") {
         document.getElementById("validar_apellidos").innerHTML = "Apellido Incompleto";
         error = true;
         apellido.focus();
     }
 
-    if (mail.value == ""){
+    if (mail.value == "") {
         document.getElementById("validar_correo").innerHTML = "Mail Incompleto";
         error = true;
         mail.focus();
     }
 
-    if (clave.value.length < 10){
+    if (clave.value.length < 10) {
         document.getElementById("validar_clave").innerHTML = "Debe tener como minimo 10 caracteres";
         error = true;
         clave.focus();
     }
-    if (error == false){
+    if (error == false) {
         document.getElementById("nombres").value = "";
         document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
         document.getElementById("apellidos").value = "";
@@ -380,11 +381,11 @@ function showSlides() {
         comentarios[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > comentarios.length) {slideIndex = 1}    
+    if (slideIndex > comentarios.length) { slideIndex = 1 }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
     }
-    comentarios[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    comentarios[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 5000);
 }

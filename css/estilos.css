@@ -26,6 +26,7 @@ header {
   padding: 30px;
   display: flex;
   flex-direction: row-reverse;
+  
 }
 
 .menu {
@@ -44,6 +45,7 @@ a {
   color: #8C6249
 }
 
+
 h1 {
 
   text-align: center;
@@ -56,7 +58,7 @@ h2 {
   text-align: center;
 }
 
-#foto,
+#fotoProd,
 #fotoDest {
   display: flex;
   flex-direction: row;
@@ -426,7 +428,7 @@ h6{
 @media (max-width: 480px) {
   header {
     flex-direction: column;
-    background-color: rgb(221, 222, 217); /* Asegurar el color de fondo */
+    background-color: rgb(221, 222, 217);
     padding: 6px;
     width: 100%;
     position: static;
@@ -725,15 +727,15 @@ a {
 .imagen_banner {
   position: relative;
   background-image: url(../img/SegundoBanner.jpg);
-  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el div */
-  width: 100%; /* Hace que el div ocupe todo el ancho del contenedor */
-  height: 500px; /* Establece una altura adecuada para mostrar la imagen de fondo */
+  background-size: cover; 
+  width: 100%; 
+  height: 500px; 
   border-image: fill 0 linear-gradient(#0001,#000);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center; /* Centra el texto horizontalmente */
+  text-align: center; 
 }
 
 .boton_banner {
@@ -749,30 +751,30 @@ a {
 }
 
 .imagen_banner h1 {
-  color: white; /* Color del texto */
-  font-size: 36px; /* Tamaño del texto */
+  color: white; 
+  font-size: 36px; 
   font-family: Montserrat;
-  font-weight: bold; /* Peso de la fuente */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra al texto para mejorar la legibilidad */
-  text-align: center; /* Centra el texto horizontalmente */
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-align: center; 
 }
 
 .boton_banner {
-  background-color: transparent; /* Establece el fondo del botón como transparente */
-  border: 2px solid white; /* Añade un borde blanco al botón */
-  border-radius: 20px; /* Hace que los bordes del botón sean redondeados */
-  color:white; /* Establece el color del texto */
-  padding: 15px 30px; /* Añade relleno al botón */
-  font-size: 20px; /* Ajusta el tamaño de la fuente */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Agrega transiciones suaves */
-  display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+  background-color: transparent;
+  border: 2px solid white; 
+  border-radius: 20px; 
+  color:white; 
+  padding: 15px 30px; 
+  font-size: 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  display: inline-block; 
 
 }
 
 .boton_banner:hover {
-  background-color: rgba(238, 222, 212, 0.2); /* Cambia gradualmente el color de fondo cuando el cursor se acerca */
-  transform: scale(1.1); /* Escala ligeramente el botón cuando el cursor se acerca */
+  background-color: rgba(238, 222, 212, 0.2); 
+  transform: scale(1.1); 
 }
 
 
@@ -802,7 +804,7 @@ a {
 }
 
 .lista_rutina {
-  padding-left: 20px; /* Agrega un espacio a la izquierda para mostrar las viñetas */
+  padding-left: 20px; 
   justify-content: center;
   display: grid;
   margin-left: 200px;
@@ -810,10 +812,10 @@ a {
 }
 
 .lista_rutina li {
-  font-size: 18px; /* Tamaño de fuente para los elementos de la lista */
-  line-height: 1.5; /* Espacio entre líneas */
-  margin-bottom: 15px; /* Espacio entre elementos de la lista */
-  color: #AC9D88; /* Color del texto */
+  font-size: 18px; 
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #AC9D88; 
 }
 
 .resultado{
@@ -822,9 +824,9 @@ a {
 
 /*MEDIA QUERYS*/
 
-/* Estilos para dispositivos con un ancho máximo de 768px (tablets en posición vertical) */
+
 @media only screen and (max-width: 768px) {
-  /*  estilos específicos para tablets en posición vertical */
+
 .imagen_banner{
   display: flex;
   width: 100%;
@@ -832,7 +834,7 @@ a {
 }
 
   .boton_repetir_test {
-    margin-top: 20px; /* Espacio superior para separar el botón del texto */
+    margin-top: 20px; 
   }
 
   .lista_rutina {
@@ -877,10 +879,10 @@ a {
 
 /* Estilos para dispositivos con un ancho máximo de 600px (tablets en posición horizontal y teléfonos) */
 @media only screen and (min-width: 500px) and (max-width: 600px) {
-  /* estilos específicos para tablets en posición horizontal y teléfonos */
+  
   .title_piel {
     margin-right: 50px;
-    padding: 20px; /* Ajusta el relleno para adaptarse mejor al espacio disponible */
+    padding: 20px; 
     width: 100%;
   }
 
@@ -901,21 +903,21 @@ a {
   }
 
   .imagen_banner {
-    width: 100%; /* Banner ocupa todo el ancho de la pantalla */
-    height: auto; /* Altura automática para mantener la proporción */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el div */
-    background-position: center; /* Centra la imagen de fondo */
-    text-align: center; /* Centra el texto */
+    width: 100%; 
+    height: auto; 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
   }
 }
 
 /* Estilos para dispositivos con un ancho máximo de 500px (teléfonos en posición vertical) */
 @media only screen and (min-width: 280px) and (max-width: 500px) {
-  /*estilos específicos para teléfonos en posición vertical */
+  
 
 
   .boton_repetir_test {
-    margin-top: 10px; /* Espacio superior para separar el botón del texto */
+    margin-top: 10px; 
     margin-bottom: 10px; 
     padding-bottom: 10px;
     border-radius: none;
@@ -944,7 +946,7 @@ a {
 
 .title_piel {
   margin-right: 30px;
-  padding: 20px; /* Ajusta el relleno para adaptarse mejor al espacio disponible */
+  padding: 20px; 
   width: 100%;
 }
   
@@ -952,7 +954,7 @@ a {
 
 /* Estilos para dispositivos con un ancho máximo de 320px (teléfonos en posición horizontal) */
 @media only screen and (max-width: 320px) {
-  /* estilos específicos para teléfonos en posición horizontal */
+  
   .lista_rutina {
     width: 100%;
     margin-left: 20px;
