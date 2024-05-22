@@ -17,29 +17,42 @@ body {
 
 header {
   width: 100%;
+  height: 100px;
   color: #AC9D88;
   background-color: rgb(221, 222, 217);
   padding: 30px;
 
   display: flex;
   flex-direction: row-reverse;
+  
 }
+
+
+
+
 
 .menu {
   display: flex;
-  padding: px;
+  padding: 0px;
   font-size: large;
   text-decoration: none;
-
+  font-weight: 300;
+ 
 }
-
-a {
+  
+.item_menu  {
   color: aliceblue;
   font-size: x-large;
   margin: 10px;
   font-weight: 400;
-  color: #8C6249
+  color: #8C6249;
+  justify-content: space-between;
+
+  margin: auto; /* Ajusta los márgenes horizontalmente */
+  margin-right: 20px; /* Ajusta el margen derecho para agregar espacio entre las etiquetas */
+  
 }
+
 
 
 .link-item {
@@ -65,76 +78,7 @@ a {
   width: 100%;
 }
 
-.button-menu {
-  z-index: 200;
-  width: 40px;
-  height: 40px;
-  border: none;
-  display: flex;
-  background: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
-.button-menu span {
-  width: 37px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #444444;
-  border-radius: 3px;
-  transform-origin: 4px 0px;
-  transition: all .2s linear;
-}
-
-.button-menu.close span {
-  opacity: 1;
-  transform: rotate(45deg) translate(0px, 0px);
-  background: #ffffff;
-}
-
-.button-menu.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(-8px, 5px);
-}
-
-.button-menu.close span:nth-child(3) {
-  display: none;
-}
-
-
-@media screen and (min-width:768px) {
-  .button-menu {
-    display: none;
-  }
-
-  .main-logo {
-    flex-basis: 30%;
-  }
-
-  .main-nav {
-    position: static;
-    margin-left: 0;
-    flex-basis: 70%;
-    height: 100%;
-  }
-
-  .nav-links {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-
-  }
-
-  .link-item {
-    display: inline-block;
-    margin-top: 0;
-    margin-right: 2rem;
-  }
-}
 
 
 h1 {
@@ -155,8 +99,8 @@ h1 {
 .header-img {
   background-image: url(https://www.rommelag.com/hs-fs/hubfs/header-kosmetik.jpg?width=1920&height=650&name=header-kosmetik.jpg);
   width: 100%;
-  height: 280px;
-
+  height: 500px;
+ 
   background-position: center;
   position: relative;
   /* Añadido */
@@ -179,16 +123,17 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
-
+  /* Color del texto */
   font-size: 24px;
-
+  /* Tamaño del texto */
   text-align: center;
-
+  /* Alineación del texto */
+  
 }
 
 nav a:hover {
   transform: scale(1.2);
-
+  /* Escalamos el elemento al 110% */
 }
 
 
@@ -196,13 +141,16 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: flex;
+  /* Usa flexbox para el diseño horizontal */
   justify-content: center;
+  /* Centra los elementos del menú a la derecha */
   padding: 0;
   background-color: white;
 }
 
 nav li {
   margin: 0 10px;
+  /* Espacio entre los elementos del menú */
   font-family: trirong;
   background-color: white;
 }
@@ -210,9 +158,13 @@ nav li {
 nav li a {
   display: block;
   padding: 10px 20px;
+  /* Aumentar el relleno de los enlaces */
   background-color: white;
+  /* Color del fondo del menú */
   color: #191C26;
+  /* Color del texto del menú */
   border-radius: 5px;
+  /* Añadir bordes redondeados */
 }
 
 nav li a:hover {
@@ -233,7 +185,9 @@ nav li a:hover {
 
 .contenedor-tarjetas .cards {
   width: 300px;
+  /* Ancho de las tarjetas */
   margin: 20px;
+  /* Márgenes entre las tarjetas */
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
@@ -274,9 +228,17 @@ nav li a:hover {
 @media screen and (max-width: 767px) {
   .contenedor-tarjetas .cards {
     width: calc(50% - 20px);
-    
+    /* Ancho del 50% menos los márgenes */
     flex-grow: 1;
-    
+    /* Permitir que las tarjetas se expandan para llenar el espacio */
+  }
+
+  .header-img{
+    background-size:cover;  /* Ajusta la imagen de fondo para que quepa dentro del div */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 200px;
+    background-repeat: no-repeat;
+    top: 100px;
   }
 }
 
@@ -286,11 +248,16 @@ nav li a:hover {
 
 .form-container {
   width: calc(100% - 20px);
-   margin-top: 40px; 
+  /* Ancho igual al de las tarjetas */
+  margin-top: 40px;
+  /* Espacio arriba del formulario */
   margin-bottom: 40px;
+  /* Espacio abajo del formulario */
   background-color: #f2f2f2;
+  /* Color de fondo del contenedor */
   padding: 20px;
-
+  /* Espaciado interno del contenedor */
+  align-items: center; /* Alinea verticalmente */
 }
 
 
@@ -327,6 +294,7 @@ nav li a:hover {
 .form label {
   display: inline-block;
   margin-bottom: 5px;
+  color: black;
 }
 
 /* Estilos para los botones */
@@ -338,6 +306,7 @@ nav li a:hover {
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  text-align: center;
 
 }
 
@@ -462,6 +431,8 @@ nav li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+
 }
 
 .button:not(:last-child) {
@@ -495,16 +466,7 @@ html {
   font-size: 100%;
 }
 
-body {
-  font-family: acumin-pro, system-ui, sans-serif;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  font-size: 14px;
-  background-color: #f4f4f4;
-  align-items: start;
-  min-height: 100vh;
-}
+
 
 footer {
   color: #AC9D88;
@@ -677,85 +639,4 @@ footer {
 
   }
 
-}
-
-/*footer*/
-footer {
-  color: aliceblue;
-  background-color: rgb(109, 85, 65);
-  font-family: 'Montserrat';
-  padding-top: 10px;
-  padding-bottom: 25px;
-  font-size: 28.8px;
-  display: flex;
-  justify-content: space-around;
-}
-
-
-.medio {
-  text-align: center;
-}
-
-.logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#aFooter {
-  text-decoration: none;
-  color: aliceblue;
-  font-size: large;
-
-}
-
-.izquierda {
-  text-align: left;
-
-}
-.margen{
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.margen1{
-margin-top: 15px;
-}
-
-.derecha {
-  text-align: left;
-}
-
-.tabla {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  list-style: none;
-  padding-left: 0%;
-  padding: 0%;
-  margin-top: 0px;
-}
-.mail{
-  color: #ccc;
-}
-.mail::before {
-  content: url(../img/email.png);
-  margin-right: 5px;
-}
-
-.boton::before {
-  content: url(../img/right-arrow.png);
-  margin-right: 5px;
-}
-h6{
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-.img{
-  display: flex;
-  justify-content: space-between;
-}
-.img2{
-  display: flex;
-  justify-content: space-between;
 }

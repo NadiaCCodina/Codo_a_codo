@@ -55,7 +55,7 @@ h2 {
   text-align: center;
 }
 
-#fotoProd,
+#app,
 #fotoDest {
   display: flex;
   flex-direction: row;
@@ -386,7 +386,13 @@ h6{
   display: flex;
   justify-content: space-between;
 }
+.mail{
+ color: rgb(221, 222, 217);  
+}
 
+.boton{
+ color: rgb(221, 222, 217);  
+}
 
 a {
 text-decoration: none;
@@ -429,6 +435,7 @@ h6{
 .boton{
   text-align: center;
   color: rgb(221, 222, 217);  
+margin-left: 2em;
 }
 
 @media (max-width: 480px) {

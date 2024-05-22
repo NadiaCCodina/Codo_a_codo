@@ -24,13 +24,25 @@
        
     </header>
    <main>
-    <div id="fotoProd">
-
+    <div id="app">
+        
+        <div v-for="producto in datos" :key="producto.id"  class="tarjeta">
+        
+            <img class= "imgb" :src="producto.imagen" :alt="producto.nombre">
+            
+           <div class="cuerpo">
+             <h2> {{producto.nombre}}</h2>
+             <h3> {{producto.descripcion}}</h3>  
+             
+           </div>  
+           <a id ="comprar" href="producto.enlase">Comprar</a>
+           </div>
     </div>
     </main>
     <footer>
 
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

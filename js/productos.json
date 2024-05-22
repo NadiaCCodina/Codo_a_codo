@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "nombre": "Serum Hialurónico",
+        "descripcion": "Serum de Acido Hialurónico",
+        "imagen": "img/serum.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/serum-con-acido-hialuronico-pantenol-dy-vitamina-e"
+    },
+    {
+        "id": 2,
+        "nombre": "Crema Facial",
+        "descripcion": "Crema hidratante con Acido Hialuronico",
+        "imagen": "img/crema.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/crema-facial-pieles-secas-o-maduras-con-acido-hialuronico"
+    },
+    {
+        "id": 3,
+        "nombre": "Manteca corporal",
+        "descripcion": "Manteca corporal de Karite",
+        "imagen": "img/manteca.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/manteca-batida-corporal"
+    },
+    {
+        "id": 4,
+        "nombre": "Mascarilla Facial",
+        "descripcion": "Mascarilla facial solida de Arcilla",
+        "imagen": "img/mascarilla.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/pack-de-mascarillas-faciales-solidas-de-arcilla"
+    },
+    {
+        "id": 5,
+        "nombre": "Limpiador facial",
+        "descripcion": "Limpiador facial solido",
+        "imagen": "img/limpiador.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/limpiador-facial-solido"
+
+    },
+    {
+        "id": 6,
+        "nombre": "Scrub",
+        "descripcion": "Scrub corporal",
+        "imagen": "img/scrub.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/scrub-corporal"
+    },
+    {
+        "id": 7,
+        "nombre": "Shampoo solido",
+        "descripcion": "Shampoo solido todo tipo de cabello",
+        "imagen": "img/shampoo.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/shampoo-solido-de-romero"
+    },
+    {
+        "id": 8,
+        "nombre": "Kit Serum y Crema Facial",
+        "descripcion": "Serum y crema con Acido Hialuronico",
+        "imagen": "img/kitSerumCrema.jpg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Kit Serum, Crema Facial y Limpiador",
+        "descripcion": "Serum y crema con Acido Hialuronico y limpiador facial",
+        "imagen": "img/kitCompleto.jpeg",
+        "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
+    }
+]
