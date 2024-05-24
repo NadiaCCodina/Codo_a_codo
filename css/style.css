@@ -17,13 +17,19 @@ body {
 
 header {
   width: 100%;
-  height: 100px;
-  color: #AC9D88;
+  color: aliceblue;
   background-color: rgb(221, 222, 217);
   padding: 30px;
-
   display: flex;
   flex-direction: row-reverse;
+  
+}
+
+.menu {
+  display: flex;
+  font-size: large;
+  text-decoration: none;
+  font-weight: 300;
   
 }
 
@@ -121,7 +127,7 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Opacidad negra */
+
 }
 
 .header {
@@ -130,17 +136,16 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
-  /* Color del texto */
+  
   font-size: 24px;
-  /* Tamaño del texto */
   text-align: center;
-  /* Alineación del texto */
+
   
 }
 
 nav a:hover {
   transform: scale(1.2);
-  /* Escalamos el elemento al 110% */
+ 
 }
 
 
@@ -148,9 +153,7 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: flex;
-  /* Usa flexbox para el diseño horizontal */
   justify-content: center;
-  /* Centra los elementos del menú a la derecha */
   padding: 0;
   background-color: white;
 }
@@ -165,18 +168,15 @@ nav li {
 nav li a {
   display: block;
   padding: 10px 20px;
-  /* Aumentar el relleno de los enlaces */
   background-color: white;
-  /* Color del fondo del menú */
   color: #191C26;
-  /* Color del texto del menú */
   border-radius: 5px;
-  /* Añadir bordes redondeados */
+  
 }
 
 nav li a:hover {
   background-color: #F3E6E0
-    /* Color de fondo al pasar el cursor */
+  
 }
 
 
@@ -235,9 +235,8 @@ nav li a:hover {
 @media screen and (max-width: 767px) {
   .contenedor-tarjetas .cards {
     width: calc(50% - 20px);
-    /* Ancho del 50% menos los márgenes */
     flex-grow: 1;
-    /* Permitir que las tarjetas se expandan para llenar el espacio */
+    
   }
 
   .header-img{
@@ -255,16 +254,11 @@ nav li a:hover {
 
 .form-container {
   width: calc(100% - 20px);
-  /* Ancho igual al de las tarjetas */
   margin-top: 40px;
-  /* Espacio arriba del formulario */
   margin-bottom: 40px;
-  /* Espacio abajo del formulario */
   background-color: #f2f2f2;
-  /* Color de fondo del contenedor */
   padding: 20px;
-  /* Espaciado interno del contenedor */
-  align-items: center; /* Alinea verticalmente */
+  align-items: center; 
 }
 
 

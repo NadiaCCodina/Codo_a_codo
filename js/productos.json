@@ -9,14 +9,14 @@
     {
         "id": 2,
         "nombre": "Crema Facial",
-        "descripcion": "Crema hidratante con Acido Hialuronico",
+        "descripcion": "Crema con Acido Hialuronico",
         "imagen": "img/crema.jpg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/crema-facial-pieles-secas-o-maduras-con-acido-hialuronico"
     },
     {
         "id": 3,
         "nombre": "Manteca corporal",
-        "descripcion": "Manteca corporal de Karite",
+        "descripcion": "Manteca de Karite",
         "imagen": "img/manteca.jpg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/manteca-batida-corporal"
     },
@@ -45,13 +45,13 @@
     {
         "id": 7,
         "nombre": "Shampoo solido",
-        "descripcion": "Shampoo solido todo tipo de cabello",
+        "descripcion": "Shampoo todo tipo de cabello",
         "imagen": "img/shampoo.jpg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/shampoo-solido-de-romero"
     },
     {
         "id": 8,
-        "nombre": "Kit Serum y Crema Facial",
+        "nombre": "Kit Facial Duo",
         "descripcion": "Serum y crema con Acido Hialuronico",
         "imagen": "img/kitSerumCrema.jpg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
@@ -59,7 +59,7 @@
 
     {
         "id": 9,
-        "nombre": "Kit Serum, Crema Facial y Limpiador",
+        "nombre": "Kit Facial Full",
         "descripcion": "Serum y crema con Acido Hialuronico y limpiador facial",
         "imagen": "img/kitCompleto.jpeg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"

@@ -170,22 +170,22 @@ let dataSeccionDest = [
     },
     {
         id: 2,
-        nombre: "Crema facial",
-        descripcion: "Crema hidratante de Acido Hialuronico",
+        nombre: "Crema facial Hidratante",
+        descripcion: "Crema de Acido Hialuronico",
         imagen: "img/crema.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/crema-facial-pieles-secas-o-maduras-con-acido-hialuronico"
     },
     {
         id: 3,
         nombre: "Manteca corporal",
-        descripcion: "Manteca corporal de Karite",
+        descripcion: "Manteca de Karite",
         imagen: "img/manteca.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/manteca-batida-corporal"
     },
     {
         id: 4,
         nombre: "Mascarilla Facial",
-        descripcion: "Mascarilla facial solida de Arcilla",
+        descripcion: "Mascarilla solida de Arcilla",
         imagen: "img/mascarilla.jpg",
         enlase: "https://inquiet.empretienda.com.ar/productos-faciales/pack-de-mascarillas-faciales-solidas-de-arcilla"
     },
