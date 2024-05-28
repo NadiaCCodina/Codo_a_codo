@@ -63,5 +63,12 @@
         "descripcion": "Serum y crema con Acido Hialuronico y limpiador facial",
         "imagen": "img/kitCompleto.jpeg",
         "enlase": "https://inquiet.empretienda.com.ar/productos-faciales/kit-limpieza-y-serum-de-argan-y-acido-hialuronico"
-    }
+    },
+    {
+        "id": 10,
+        "nombre": "Kit Corporal",
+        "descripcion": "Scrub y Manteca",
+        "imagen": "img/kitCorporal.jpg",
+        "enlase": "https://inquiet.empretienda.https://inquiet.empretienda.com.ar/productos-faciales/kit-cuidado-corporal"
+        }
 ]
