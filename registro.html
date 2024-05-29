@@ -12,7 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Jersey+20&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
-     
+      <script src="./js/main.js"></script>
 </head>
 <body class="contenedor_registro">
     <header>
@@ -20,30 +20,33 @@
     </header>
    <main>
     <form onsubmit="return validar();">
-      
-    <section class="form-register">
-      <h4>Formulario Registro</h4>
-      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-      <div id="validar_nombres" style="color:red;"> &nbsp;</div>
-      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-      <div id="validar_apellidos" style="color:red;">&nbsp;</div>
-      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-      <div id="validar_correo" style="color:red;">&nbsp;</div>
-      <input class="controls" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña">
-      <div id="validar_clave" style="color: red;">&nbsp;</div>
-      <p>Estoy de acuerdo con <a href="#" id="terminos">Terminos y Condiciones</a></p>
-      <input class="botons" type="submit" value="Registrar">
-      <p><a href="#">¿Ya tengo Cuenta?</a></p>
-    </section>
-      <div>
-        <img src="" alt="">
-      </div>
-      
+  
+      <section class="form-register">
+          <h4>Formulario Registro</h4>
+          <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+          <div id="validar_nombres" style="color:red;"> &nbsp;</div>
+          <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+          <div id="validar_apellidos" style="color:red;">&nbsp;</div>
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+          <div id="validar_correo" style="color:red;">&nbsp;</div>
+          <input class="controls" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña">
+          <div id="validar_clave" style="color: red;">&nbsp;</div>        
+          <input type="checkbox" id="cbox" name="my_checkbox"/>
+          <label>Estoy de acuerdo con los </label> 
+          <a href="#">Terminos y Condiciones</a>
+          <div id="validar_chebox" style="color: red;">&nbsp;</div> 
+          <input class="botons" type="submit" value="Registrar">
+          <p><a href="#">¿Ya tengo Cuenta?</a></p>
         </section>
+        <div>
+          <img src="" alt="">
+        </div>
+        
+    </form>
     </main>
     <footer>
 
     </footer>
-    <script src="./js/main.js"></script>
+  
 </body>
 </html>

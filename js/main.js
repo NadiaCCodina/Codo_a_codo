@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelector("header").innerHTML = `
+    document.querySelector("header").innerHTML = `
  <nav class= "menu">
 <div class="nav-links" >
 <a href="./index.html">Home</a>
@@ -308,17 +308,20 @@ function validar() {
     let apellido = document.getElementById("apellidos");
     let mail = document.getElementById("correo");
     let clave = document.getElementById("clave");
+    let cheBox = document.getElementById("cbox");
     error = false;
 
     document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
     document.getElementById("validar_apellidos").innerHTML = "&nbsp; ";
     document.getElementById("validar_correo").innerHTML = "&nbsp; ";
     document.getElementById("validar_clave").innerHTML = "&nbsp; ";
+    document.getElementById("validar_chebox").innerHTML = "&nbsp";
 
     if (nombre.value == "") {
         document.getElementById("validar_nombres").innerHTML = "Nombre Incompleto";
         error = true;
         nombre.focus();
+
     }
 
     if (apellido.value == "") {
@@ -339,6 +342,12 @@ function validar() {
         clave.focus();
     }
 
+    if (cheBox.value == "") {
+        cheBox.focus();
+    }
+
+
+
     if (error == false) {
         document.getElementById("nombres").value = "";
         document.getElementById("validar_nombres").innerHTML = "&nbsp; ";
@@ -348,27 +357,32 @@ function validar() {
         document.getElementById("validar_correo").innerHTML = "&nbsp; ";
         document.getElementById("clave").value = "";
         document.getElementById("validar_clave").innerHTML = "&nbsp; ";
+        document.getElementById("my_checkbox").value = "";
+        document.getElementById("validar_chebox").innerHTML = "&nbsp; ";
         alert("Dato enviado");
     }
-    return !error
+
+
+    return !error;
 }
+
 
 //carrusel automatico comentarios
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-    
+
     let comentarios = document.getElementsByClassName("gallery-item-c");
-   
+
     for (let coment of comentarios) {
-     coment.style.display = "none";
+        coment.style.display = "none";
     }
-   
+
     comentarios[slideIndex].style.display = "block";
 
     slideIndex++;
-    if (slideIndex > comentarios.length -1) { slideIndex = 0 }
+    if (slideIndex > comentarios.length - 1) { slideIndex = 0 }
 
     setTimeout(showSlides, 5000);
 }

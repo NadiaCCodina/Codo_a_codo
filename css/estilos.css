@@ -404,7 +404,7 @@ text-decoration: none;
 
 
 /*footer*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 footer {
 
 
@@ -414,7 +414,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 25px;
   font-size: px;
- display:block;
+  display:block;
 
  
 }
@@ -438,6 +438,7 @@ h6{
   margin-left: 50px;
 }
 }
+
 .boton{
   text-align: center;
   color: rgb(221, 222, 217);  
@@ -778,7 +779,7 @@ margin-left: 2em;
   color:#AC9D88;
   padding:10px;
   font-size: 20px;
- font-weight: 100;
+ font-weight: 300;
   width: 100%;
 }
 
