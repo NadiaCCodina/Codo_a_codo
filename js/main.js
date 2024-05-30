@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelector("header").innerHTML = `
  <nav class= "menu">
-<div class="nav-links" >
+
 <a href="./index.html">Home</a>
 <a href="./tiposdepiel.html">Tipos de piel</a>
 <a href="./productos.html">Productos</a>
 <a href="./registro.html">Registro</a>
-</div>
+
 </nav> 
 `;
 

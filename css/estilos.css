@@ -32,15 +32,16 @@ header {
   font-size: large;
   text-decoration: none;
   font-weight: 300;
-  
+
 }
 
-a {
+.menu a {
   color: aliceblue;
-  font-size: x-large;
-  margin: 10px;
-  font-weight: 400;
-  color: #8C6249
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  color: #8C6249;
+  padding: 10px;
 }
 
 
@@ -178,12 +179,12 @@ h2 {
 
 #comprar {
   width: 100%;
-  font-size: medium;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   position: sticky;
   bottom: 10px;
-  padding: 10px 80px;
+  padding: 10px 70px;
   background-color: #d2c1aa;
   opacity: 0%;
   color: rgb(255, 255, 255);
@@ -445,22 +446,23 @@ h6{
 margin-left: 2em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+  .menu,
   header {
     flex-direction: column;
-    background-color: rgb(221, 222, 217);
-    padding: 30px;
-    width: 100%;
-    position: static;
-  }
   
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+
+
   }
 
-
+}
+@media (max-width: 500px) {
+  .menu a {
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 480px) {
@@ -475,14 +477,14 @@ margin-left: 2em;
   #comprar {
     width: 100%;
     font-size: medium;
-    font-weight: 300;
+    font-weight: 450;
     text-align: center;
     position: sticky;
     bottom: 10px;
-    padding: 10px 40px;
+    padding: 10px 50px;
     background-color: #d2c1aa;
     opacity: 50%;
-    color: rgb(109, 85, 65);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -493,6 +495,7 @@ margin-left: 2em;
   #comprar:hover {
     opacity: 100%;
   }
+ 
 
 }
 
@@ -501,7 +504,7 @@ margin-left: 2em;
 
 @media (max-width: 480px) {
   .tarjeta {
-    height: 320px;
+    height: 329px;
     width: 170px;
     font-size: x-small;
     margin: 1px;
@@ -513,8 +516,14 @@ margin-left: 2em;
     padding-top: 10px !important;
     padding-left: 5px!important;
     padding-right: 5px !important  ;
+   padding-bottom: 0%;
   }
-  
+  .tarjeta .cuerpo h3{
+    font-size: 13px;
+    line-height:20px;
+    padding:0 ;
+    font-weight: 500;
+  }
 }
 
 
@@ -563,7 +572,7 @@ margin-left: 2em;
     width: 100%;
     margin: 10px;
     line-height: 35px;
-    font-size: 15px;
+    font-size: 20px;
     padding: 25px;
     display: block;
     text-align: center;
@@ -613,11 +622,7 @@ margin-left: 2em;
 
 
 
-@media(max-width:480px) {
-  .tarjeta .cuerpo h3 {
-    font-size: small;
-  }
-}
+
 
 @media(max-width:480px) {
   .gallery-item-c {

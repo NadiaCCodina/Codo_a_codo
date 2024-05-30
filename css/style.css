@@ -30,41 +30,21 @@ header {
   font-size: large;
   text-decoration: none;
   font-weight: 300;
-  
+
 }
 
-
-a {
+.menu a {
   color: aliceblue;
-  font-size: x-large;
-  margin: 10px;
-  font-weight: 400;
-  color: #8C6249
-}
-
-
-
-.menu {
-  display: flex;
-  padding: 0px;
-  font-size: large;
-  text-decoration: none;
-  font-weight: 300;
- 
-}
-  
-.item_menu  {
-  color: aliceblue;
-  font-size: x-large;
-  margin: 10px;
-  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
   color: #8C6249;
-  justify-content: space-between;
-
-  margin: auto; /* Ajusta los márgenes horizontalmente */
-  margin-right: 20px; /* Ajusta el margen derecho para agregar espacio entre las etiquetas */
-  
+  padding: 10px;
 }
+
+
+
+
 
 
 
@@ -470,15 +450,14 @@ html {
 
 
 footer {
-  color: #AC9D88;
-  background-color: rgb(221, 222, 217);
+  color: aliceblue;
+  background-color: rgb(109, 85, 65);
   font-family: 'Montserrat';
-  text-align: center;
-  padding: 20 px;
-
+  padding-top: 10px;
+  padding-bottom: 25px;
   font-size: 28.8px;
-  font-weight: 100;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -584,23 +563,47 @@ footer {
   }
 }
 
-@media screen and (min-width: 40.375em) {
-  .footer__nav>* {
-    flex: 1;
+/*footer*/
+@media (max-width: 800px) {
+  footer {
+  
+  
+    color: aliceblue;
+    background-color: rgb(109, 85, 65);
+    font-family: 'Montserrat';
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: px;
+    display:block;
+  
+   
   }
-
-  .nav__item--extra {
-    flex-grow: 2;
+  
+  h6{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
   }
-
-  .footer__addr {
-    flex: 1 0px;
+  .imgFooter{
+    display: flex;
+    justify-content:center;
   }
-
-  .footer__nav {
-    flex: 2 0px;
+  .img2Footer{
+    display: flex;
+    justify-content: center;
   }
-}
+  .mail{
+    text-align: right;
+    color: rgb(221, 222, 217); 
+    margin-left: 50px;
+  }
+  }
+  
+  .boton{
+    text-align: center;
+    color: rgb(221, 222, 217);  
+  margin-left: 2em;
+  }
 
 
 
@@ -640,4 +643,11 @@ footer {
 
   }
 
+}
+@media (max-width: 500px) {
+  .menu a {
+    font-size: 25px;
+    margin: 5px;
+    font-weight: 500;
+  }
 }
