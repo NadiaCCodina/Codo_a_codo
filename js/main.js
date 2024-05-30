@@ -135,7 +135,7 @@ let dataSeccionProd = [
     },
 ]
 
-var elemento = document.getElementById('fotoProd');
+/*var elemento = document.getElementById('fotoProd');
 if (elemento) {
     cad = ``
     for (let producto of dataSeccionProd) {
@@ -158,7 +158,7 @@ if (elemento) {
     document.querySelector("#fotoProd").innerHTML = cad
     let currentIndex = 0;
 
-}
+}*/
 
 let dataSeccionDest = [
     {
