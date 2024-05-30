@@ -437,6 +437,7 @@ h6{
   text-align: right;
   color: rgb(221, 222, 217); 
   margin-left: 50px;
+  font-size: 22px;
 }
 }
 
@@ -444,6 +445,7 @@ h6{
   text-align: center;
   color: rgb(221, 222, 217);  
 margin-left: 2em;
+font-size: 22px;
 }
 
 @media (max-width: 500px) {
